@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ENGLISH</title>
+        <link rel="stylesheet" href="music.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.googleapis.com/css2?family=Croissant+One&display=swap" rel="stylesheet">
+    </head>
+    <body>
+    <div class="home"><a href="index.html">home</a></div>
+    <div class="head"><h1>ENGLISH SONGS</h1></div>
+    <div class="main">
+        <img id="backimg" src="englishimages/What-Makes-You-Beautiful.jpg" alt="">
+        <div class="list">
+            <h1>upcoming songs</h1>
+            <ol>
+                <li onclick="song0()">What-Makes-You-Beautiful</li>
+                <li onclick="song1()">no lie</li>
+                <li onclick="song2()">royalty</li>
+                <li onclick="song3()">stereo hearts</li>
+                <li onclick="song4()">on my way</li>
+                <li onclick="song5()">montero</li>
+                <li onclick="song6()">yummy</li>
+                <li onclick="song7()">beliver</li>
+            </ol>
+        </div>
+        <div class="container">
+            <label for=""class="btn"><i class="fa-solid fa-angles-down fa-bounce"></i></label>
+            <div class="img"><img id="img" src="englishimages/What-Makes-You-Beautiful.jpg" alt=""> </div>
+            <div class="title">What-Makes-You-Beautiful</div>
+            <div class="artist">One Direction</div>
+            <audio src="englishsongs/What-Makes-You-Beautiful.m4a" id="audio"></audio>
+            
+            <div class="progressbar">
+                <div class="progress"></div>
+                <div class="time">
+                    <div class="current">00:00</div>
+                    <div class="duration">00:00</div>
+                </div>
+            </div>
+            <br>
+            <div class="buttons">
+                <i class="fa-solid fa-backward" id="pre"></i>
+                <i  id="play"> <img  class="play" src="play.svg" alt=""></i>
+                <i class="fa-solid fa-forward" id="next"></i>
+            </div>
+            <!-- <button onclick="autoplay()">h</button> -->
+        </div>
+        <div class="category">
+                <h1>other playlist</h1>
+                <h4><a href="phonk.html">phonk</a></h4>
+                <h4><a href="hindi.html">hindi</a></h4>
+                <h4><a href="punjabi.html">punjabi</a></h4>
+                <h4><a href="telugu.html">telugu</a></h4>
+                <h4><a href="kpop.html">k-pop</a></h4>
+                <h4><a href="3dsongs.html">3d music</a></h4>
+                <h4><a href="anime.html">anime</a></h4>
+        </div>
+    </div>
+    <script src="english.js"></script>
+</body>
+</html>
