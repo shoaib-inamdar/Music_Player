@@ -224,3 +224,9 @@ function song7(){
     music.play();
     playico.src="pause.svg"
 }
+gsap.to(".loader",{
+    y:-1000,
+    duration:1.5,
+    delay:1,
+    opacity:0
+})

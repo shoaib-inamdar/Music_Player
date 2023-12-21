@@ -56,16 +56,16 @@ gsap.from(".page2 .song",{
         // markers:true
     }
 })
-gsap.to(".page3",{
-    background:"black",
-    scrollTrigger:{
-        trigger:".page3 .box",
-        scroller:"body",
-        start:"top 60%"
-        // scrub:1
-        // markers:true
-    }
-})
+// gsap.to(".page3",{
+//     background:"black",
+//     scrollTrigger:{
+//         trigger:".page3 .box",
+//         scroller:"body",
+//         start:"top 60%"
+//         // scrub:1
+//         // markers:true
+//     }
+// })
 // gsap.from(".page3 h1,.page3 .content,.page3 .box",{
 //     opacity:0,
 //     stagger:.2,
@@ -154,4 +154,48 @@ gsap.to(".scrolldown",{
 //     function scroll(){
 //             progress.style.heigth=x++;
         
+// }
+var crsr = document.querySelector(".cursor");
+window.addEventListener("mousemove", function (dets) {
+    crsr.style.left = dets.clientX + "px";
+    crsr.style.top = dets.clientY + "px";
+  });
+var category=document.querySelector(".page2 h1");
+var nav=document.querySelector("nav")
+var a=document.querySelectorAll("body a");
+var footer=document.querySelector("footer");
+[footer,nav,category].forEach(function(elem){
+    elem.addEventListener("mouseenter", function () {
+        crsr.style.scale = 4;
+        crsr.style.border = "1px solid #fff";
+        // crsr.style.transform='translate(-50%,-50%)'
+        crsr.style.backgroundColor = "transparent";
+      })
+    
+      elem.addEventListener("mouseleave", function () {
+        crsr.style.scale = 1;
+        crsr.style.border = "0px solid #95C11E";
+        // crsr.style.backgroundColor = "#95C11E";
+      });
+})
+//   window.addEventListener("mousemove", moveCircle);
+a.forEach(function(elem){
+    elem.addEventListener("mouseenter", function () {
+        crsr.style.scale = 4;
+        crsr.style.border = "1px solid #fff";
+        // crsr.style.transform='translate(-50%,-50%)'
+        crsr.style.backgroundColor = "transparent";
+      })
+    
+      elem.addEventListener("mouseleave", function () {
+        crsr.style.scale = 1;
+        crsr.style.border = "0px solid #95C11E";
+        // crsr.style.backgroundColor = "#95C11E";
+      });
+})
+// function moveCircle(e) {
+//   TweenLite.to(crsr, 0.3, {
+//     x: e.clientX,
+//     y: e.clientY
+//   });
 // }
