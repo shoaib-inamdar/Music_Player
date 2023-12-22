@@ -330,6 +330,7 @@ button{
     }
     #backimg{
         /* width: 100%; */
+        top: 0;
         object-fit:cover;
         height: 100vh;
         /* object-position:-50px; */
