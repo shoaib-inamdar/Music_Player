@@ -18,6 +18,7 @@ var backimg=document.querySelector("#backimg");
 var newsong=document.getElementsByClassName("a");
 var list=document.querySelector(".list");
 var category=document.querySelector(".category");
+var li=document.querySelectorAll('.list li');
 const songs=[{
     name:"Cheques",
     title:"Cheques",
@@ -71,19 +72,19 @@ const songs=[{
 var flag=true
 btn.addEventListener("click",()=>{
     if(flag){
-    con.style.flexDirection="row";
-    con.style.bottom=0;
-    con.style.height="15%"
-    con.style.width='80%';
-    img.style.width="10%"
-    img.style.height="100%"
-    ima.style.borderRadius="0%"
-    btn.style.left="5%"
-    progressbar.style.top="-10%"
-    progressbar.style.width="95%"
-    btn.style.transform="rotate(180deg)"
-    category.style.height="60%"
-    category.style.opacity=0
+        con.style.flexDirection="row";
+        con.style.bottom=0;
+        con.style.height="15%"
+        con.style.width='80%';
+        img.style.width="10%"
+        img.style.height="100%"
+        ima.style.borderRadius="0%"
+        btn.style.left="5%"
+        progressbar.style.top="-10%"
+        progressbar.style.width="95%"
+        btn.style.transform="rotate(180deg)"
+        category.style.height="60%"
+        category.style.opacity=0
     list.style.opacity=0
     list.style.height="60%"
     con.style.position="absolute"
@@ -133,22 +134,22 @@ const loadSong=(songs)=>{
 songindex=0;
 const nextsong=()=>{
     
-        songindex=(songindex+1)%songs.length;
-        //default index starts from 0
-        //but default index for array objects is 1
-        // if total songs= 3 i.e total index=2
-        // and song length is 3
-        //2 =(2+1)%3
-        //here 3%3=0
-        //therefore the songs get reset to 0
-        loadSong(songs[songindex]);
+    songindex=(songindex+1)%songs.length;
+    //default index starts from 0
+    //but default index for array objects is 1
+    // if total songs= 3 i.e total index=2
+    // and song length is 3
+    //2 =(2+1)%3
+    //here 3%3=0
+    //therefore the songs get reset to 0
+    loadSong(songs[songindex]);
+    playico.src="pause.svg"
+    if (music.duration > 0 && !music.paused) {
+        playico.src="play.svg"
+    } else {
         playico.src="pause.svg"
-        if (music.duration > 0 && !music.paused) {
-            playico.src="play.svg"
-        } else {
-            playico.src="pause.svg"
-        }
-        music.play();
+    }
+    music.play();
 };
 const prevsong=()=>{
     songindex=(songindex-1+songs.length)%songs.length;
@@ -163,14 +164,14 @@ const prevsong=()=>{
 
 music.addEventListener("timeupdate",(event)=>{
     const {currentTime,duration}=event.srcElement;
-     var minduration=Math.floor(duration/60);
-     var secduration=Math.floor(duration%60);
-     songduration.innerHTML=minduration+":"+secduration;
-
-     var mincurrent=Math.floor(currentTime/60);
-     var seccuurent=Math.floor(currentTime%60);
-     currentsong.innerHTML=mincurrent+":"+seccuurent;
-     if(music.ended)
+    var minduration=Math.floor(duration/60);
+    var secduration=Math.floor(duration%60);
+    songduration.innerHTML=minduration+":"+secduration;
+    
+    var mincurrent=Math.floor(currentTime/60);
+    var seccuurent=Math.floor(currentTime%60);
+    currentsong.innerHTML=mincurrent+":"+seccuurent;
+    if(music.ended)
     {
         nextsong();
     }
@@ -178,11 +179,11 @@ music.addEventListener("timeupdate",(event)=>{
 next.addEventListener("click",nextsong);
 prev.addEventListener("click",prevsong);
 
- music.ontimeupdate=function(e){
+music.ontimeupdate=function(e){
     progress.style.width=Math.floor(music.currentTime*100/music.duration)+"%";
- }
- progressbar.onclick=function(e){
-   music.currentTime=((e.offsetX/progressbar.offsetWidth)*music.duration);
+}
+progressbar.onclick=function(e){
+    music.currentTime=((e.offsetX/progressbar.offsetWidth)*music.duration);
 }
 
 function song0(){
@@ -245,3 +246,36 @@ gsap.to(".loader",{
     delay:1,
     opacity:0
 })
+var opa=document.querySelector(".change");
+function change() {
+    if (getComputedStyle(con).zIndex == "2") {
+        list.style.zIndex = "2";
+        list.style.opacity = "1";
+        category.style.zIndex = "1";
+        con.style.zIndex = "0";
+        category.style.opacity = "0";
+        con.style.opacity = "0";
+
+    }
+    if (getComputedStyle(category).zIndex == "2") {
+        list.style.zIndex = "1";
+        list.style.opacity = "0";
+        con.style.zIndex = "2";
+        con.style.opacity = "1";
+        category.style.opacity = "0";
+        category.style.zIndex = "0";
+    }
+    if (getComputedStyle(list).zIndex == "2") {
+        list.style.zIndex = "0";
+        list.style.opacity = "0";
+        con.style.zIndex = "1";
+        con.style.opacity = "0";
+        category.style.zIndex = "2";
+        category.style.opacity = "1";
+    }
+}
+
+
+// zindex.addEventListener("click",function(){
+    
+// })

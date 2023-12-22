@@ -286,3 +286,71 @@ button{
     font-size:x-large;
     font-family: 'Courier New', Courier, monospace;
 }
+.change{
+    position: absolute;
+    margin: 10px 0px;
+    right: 0;
+    color:#fff ;
+    padding: 0 10px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background: rgba(0,0,0, 0.5);
+    backdrop-filter:blur(.2rem);
+    display: none;
+
+}
+@media screen and (max-width: 768px) {
+    html,body{
+        /* max-width: 100%; */
+        overflow: hidden;
+    }
+    .change{
+        display:block;
+    }
+    body{
+        position: relative;
+    }
+    .btn{
+        display: none;
+    }
+    .main{
+        width: 100%;
+        /* overflow-wrap: wrap; */
+        overflow: hidden;
+        margin: 20px 0;
+        padding: 10px 10px;
+    
+    }
+    .list,.container,.category{
+        width: 95vw;
+        height: 80vh;
+        /* overflow: hidden; */
+        position:absolute;
+        /* backdrop-filter: blur(20px); */
+    }
+    #backimg{
+        /* width: 100%; */
+        object-fit: fill;
+        /* object-position:-50px; */
+    }
+    .list,.category{
+        opacity: 0;
+    }
+    .container{
+        z-index: 2;
+        opacity: 1;
+    }
+    .home{
+        /* position: relative; */
+        /* left: 0; */
+        margin: 0;
+    }
+    .head{
+        margin: 0 10px;
+        /* padding: 0 1px; */
+        width: 170px;
+        height: 70px;
+        font-size: 12px;
+        border-radius: 30px;
+    }
+}

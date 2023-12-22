@@ -210,3 +210,31 @@ gsap.to(".loader",{
     delay:1,
     opacity:0
 })
+var opa=document.querySelector(".change");
+function change() {
+    if (getComputedStyle(con).zIndex == "2") {
+        list.style.zIndex = "2";
+        list.style.opacity = "1";
+        category.style.zIndex = "1";
+        con.style.zIndex = "0";
+        category.style.opacity = "0";
+        con.style.opacity = "0";
+
+    }
+    if (getComputedStyle(category).zIndex == "2") {
+        list.style.zIndex = "1";
+        list.style.opacity = "0";
+        con.style.zIndex = "2";
+        con.style.opacity = "1";
+        category.style.opacity = "0";
+        category.style.zIndex = "0";
+    }
+    if (getComputedStyle(list).zIndex == "2") {
+        list.style.zIndex = "0";
+        list.style.opacity = "0";
+        con.style.zIndex = "1";
+        con.style.opacity = "0";
+        category.style.zIndex = "2";
+        category.style.opacity = "1";
+    }
+}

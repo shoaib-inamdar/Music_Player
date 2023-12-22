@@ -519,3 +519,44 @@ footer i{
         filter: hue-rotate(360deg);
     }
 }
+
+@media screen and (max-width: 768px) {
+    .name {
+      font-size: 18px;
+    }
+  
+    nav ul li {
+      font-size: 14px;
+    }
+  
+    .scrolldown a {
+      font-size: 14px;
+    }
+  
+    .page2 h1 {
+      font-size: 24px;
+    }
+  
+    .content {
+      flex-direction: column;
+    }
+  
+    .content .c1 h4, .content .c2 h4 {
+      font-size: 16px;
+      padding: 0;
+      /* margin: 0; */
+    }
+  
+    .musical,.song {
+      width: 50px;
+      height: 50px;
+    }
+  
+    footer {
+      font-size: 14px;
+    }
+  
+    .icon i {
+      font-size: 20px;
+    }
+  }
