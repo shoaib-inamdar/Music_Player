@@ -330,7 +330,8 @@ button{
     }
     #backimg{
         /* width: 100%; */
-        object-fit: fill;
+        object-fit:cover;
+
         /* object-position:-50px; */
     }
     .list,.category{
