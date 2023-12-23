@@ -85,6 +85,7 @@ gsap.to(".scrolldown",{
     yoyo:true,
     duration:.5
 })
+
 // gsap.to(".page1 .para1 h5",{
 //     x:-500,
 //     scrollTrigger:{
@@ -193,6 +194,7 @@ a.forEach(function(elem){
         // crsr.style.backgroundColor = "#95C11E";
       });
 })
+
 // function moveCircle(e) {
 //   TweenLite.to(crsr, 0.3, {
 //     x: e.clientX,
