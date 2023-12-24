@@ -17,7 +17,7 @@ body::-webkit-scrollbar{
     display: none;
 }
 html{
-    font-size: 10px;
+    /* font-size: 10px; */
     scroll-behavior: smooth;
 }
 /* .progress{
@@ -51,15 +51,15 @@ html{
     top: 0;
 }
 .loader img{
-    width: 40rem;
-    height: 40rem;
-    clip-path: circle(50% at 50% 50%);
+    width: 25rem;
+    height: 25rem;
+    /* clip-path: circle(50% at 50% 50%); */
     /* clip-path: polygon(50% 0%, 0% 100%, 100% 100%); */
     /* filter: drop-shadow( 5px 5px 5px #000,5px 5px 10px #fff,5px 5px 15px yellow,5px 5px 20px yellow); */
     /* box-shadow: 0 0 5px #fff,0 0 10px #fff,0 0 15px #fff,0 0 20px #fff; */
 }
 .loader h1{
-    font-size: 4rem;
+    font-size: 3rem;
 }
 body{
     width: 100vw;
@@ -76,7 +76,7 @@ body{
     height: auto;
     position: absolute;
     bottom: 10%;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
     transform: translateX(-50%);
     left: 50%;
@@ -92,7 +92,7 @@ body{
     height: 100%;
     width: 100%;
     /* background-color:rgb(0, 0, 0); */
-    z-index: 11;
+    /* z-index: 11; */
     /* overflow-x: hidden; */
     /* position: absolute; */
     /* border-radius: -10%; */
@@ -100,21 +100,11 @@ body{
 }
 #head{
     width: 100%;
+    /* height: 100%; */
+    z-index: -1;
     position: fixed;
     top: 0;
     object-fit:contain;
-}
-.page3{
-    height: 100%;
-    width: 100%;
-    display: grid;
-    place-items: center;
-    /* justify-content: center; */
-    /* align-items: center; */
-    background:transparent;
-    position: relative;
-    /* top: 10%; */
-    /* border-top-right-radius: 100rem; */
 }
 .page2{
     /* border-radius: 10%; */
@@ -137,12 +127,12 @@ body{
 } */
 nav{
     width: 100%;
-    height: 10%;
+    height: 9%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0rem 1.0rem;
-    margin: 10px 0;
+    padding: 0 10px;
+    margin: 20px 0;
     /* border-bottom: .2rem solid ; */
     /* box-shadow:0 0 1.0rem ; */
     position:fixed;
@@ -159,10 +149,10 @@ nav ul{
 }
 nav ul li{
     /* flex-direction: column; */
-    margin: 0 1.0rem;
+    margin: 0px 10px;
     display: flex;
     /* font-weight: 100px; */
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 nav ul li a{
     text-decoration: none;
@@ -251,7 +241,7 @@ a:hover::after{
     cursor: pointer;
 }
 .page1 .name{
-    font-size: 5.0rem;
+    font-size: 4.0rem;
     /* color: #fff; */
     /* animation: hue 2s infinite; */
 }
@@ -280,7 +270,7 @@ a:hover::after{
     color: transparent; */
 }
 .page1 .logo{
-    font-size: 5.0rem;
+    font-size: 4.0rem;
     margin-left: 2.0rem;
     /* width: 10%; */
     /* height: 10%; */
@@ -303,87 +293,36 @@ button{
     width: 10%;
     height: 10%;
 }
-.page3 h1{
-    text-transform: uppercase;
-    width: 100%;
-    height: 50%;
-    position: relative;
-    text-align: center;
-    /* border: 2rem solid; */
-    font-size: 3.5rem;
-    box-shadow: 0 0rem 1.0rem ;
-}
-.page3 .content{
-    
-    height: 40.0rem;
-    width: 50%;
-    /* background-color: red; */
-    border-radius: 10%;
-    background: rgba(225, 225,225, 0.1);
-    backdrop-filter:blur(1.0rem);
-    display:flex;
-    /* justify-content: space-between; */
-    flex-wrap:wrap;
-    justify-content: center;
-    align-items: center;
-    /* margin: 10rem 10rem; */
-    /* overflow: hidden; */
-    /* position: relative; */
-    /* top: -20rem; */
-    font-size: 2.5rem;
-    padding: 1.0rem 1.0rem;
-}
-.page3 .content .box{
-    width: 40%;
-    height: 40%;
-    text-align: center;
-    margin: 0rem 1.0rem;
-    border-radius: 10%;
-    text-transform: uppercase;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* padding:10rem 10rem; */
-    /* margin: 10rem 10rem; */
-    /* display:flex; */
-    /* border: 2rem solid ; */
-    transition: .5s;
-    color: #fff;
-    /* justify-content: space-between; */
-}
-.page3 .content .box:hover{
-    /* border: 5rem solid #2692E8; */
-    /* animation: hue 2s infinite; */
-    transform: scale(120%);
-    box-shadow:0 0 5px #1fe9f1,0 0 10px #1fe9f1,0 0 15px #1fe9f1,0 0 20px #1fe9f1 ,inset 0 0 5px #1fe9f1,0 0 10px #1fe9f1,0 0 15px #1fe9f1,0 0 20px #1fe9f1;
-    /* transform:rotateX(30deg); */
-        animation: hue 2s infinite;
-
-}
 .page2 .content{
     width: 50%;
-    height: 40rem;
+    height: auto;
     display: flex;
     /* place-items:center ; */
     justify-content: center;
     align-items: center;
-    /* z-index: 111; */
+    z-index: 111;
     color: #fff;
     text-transform: uppercase;
     /* border: 2px solid red; */
     background: rgba(225, 225,225, 0.3);
     /* filter: blur(10px); */
-    z-index: 1;
+    /* z-index: 1; */
     border-radius: 10%;
-    font-size: 50px;
+    font-size: 40px;
 }
 .page2 .content .c1 h4,.c2 h4{
-    /* display: flex; */
+    display: flex;
     /* align-items: start; */
     /* font-size: 50px; */
-    padding: 10px 10px;
+    /* padding: 5px; */
     /* float: left; */
-    margin: 10px 0;
+    /* position: absolute; */
+    /* text-align: center; */
+    align-items: center;
+    justify-content: center;
+    width: 15rem;
+    height: 5rem;
+    margin: 6px ;
     text-align: center;
     /* border: 2px solid yellow; */
     background: rgba(0, 0,0, .7);
@@ -393,7 +332,7 @@ button{
     border-radius: 50px;
 }
 .page2 .content .c1,.c2 {
-    padding: 40px 0px;
+    padding: 10px 0px;
     /* display: flex; */
     /* justify-content: center; */
     /* align-items: center; */
@@ -464,9 +403,11 @@ button{
 .page2 h1{
     text-align: center;
     width: 100%;
+    position: relative;
+    top: 2rem;
     background: rgba(225, 225,225, 0.1);
     backdrop-filter:blur(1.5rem);
-
+    font-size: 3.5rem;
 }
 
 footer{
@@ -518,6 +459,9 @@ footer i{
     pointer-events: none;
     animation: hue 2s infinite;
 }
+.sidenav , .navbtn{
+    display: none;
+}
 @keyframes hue {
     0%{
         filter: hue-rotate(0deg);
@@ -528,42 +472,131 @@ footer i{
 }
 
 @media screen and (max-width: 768px) {
-    .name {
-      font-size: 18px;
+    .main{
+        width: 100vw;
+        height: 100vh;
+        /* overflow: hidden; */
     }
-  
-    nav ul li {
-      font-size: 14px;
+    .page1 .name {
+        /* right: 0; */
+      font-size: 2rem;
     }
-  
+    .page1 .logo{
+        position: relative;
+        top: 0%;
+        left: 0%;
+        font-size:2rem;
+        margin: 0;
+        padding: 0 ;
+    }
+    .page2{
+        /* left: 0; */
+        /* position: relative; */
+    }
     .scrolldown a {
-      font-size: 14px;
+        font-size: 14px;
     }
-  
+    .page2 .content{
+        z-index: 1111;
+        flex-direction:column;
+        /* font-size: 20px; */
+        width: 60%;
+    }
+    .content .c1,.content .c2{
+        margin: 0;
+        padding: 0;
+    }
+    .page2 .content .c1 h4,.c2 h4{
+        /* padding: 0; */
+        width: 12rem;
+        font-size: 2rem;
+        height: 5rem;
+    }
+    .musical ,.song{
+        display: none;
+    }
     .page2 h1 {
-      font-size: 24px;
+      font-size: 3rem;
+      /* text-align: center; */
     }
-  
-    .content {
-      flex-direction: column;
+    footer .copyright{
+        font-size: 1rem;
     }
-  
-    .content .c1 h4, .content .c2 h4 {
-      font-size: 16px;
-      padding: 0;
-      /* margin: 0; */
+    footer .contact{
+        font-size: 2rem;
     }
-  
-    .musical,.song {
-      width: 50px;
-      height: 50px;
+    nav{
+        position: relative;
+        /* width: 100vw; */
+        top: 0;
+        left: 0;
+        margin: 0px;
+        padding: 0px;
+        justify-content: space-evenly;
+        /* align-items: center; */
     }
-  
-    footer {
-      font-size: 14px;
+    nav ul{
+        display: none;
+        /* position: absolute; */
+        /* top: 0; */
+        z-index: -1111;
     }
-  
-    .icon i {
-      font-size: 20px;
+    .sidenav{
+        display: flex;   /*? //flex/// */
+        flex-direction: row;
+        position: absolute;
+        /* top: 80px; */
+        justify-content: center;
+        right: -100%;
+        top: 0;
+        background: rgba(225, 225, 225, 0.2);
+        backdrop-filter:blur(10px);
+        /* color: #000; */
+        /* gap: 10px; */
+        width: 100%;
+        height: 100%;
+        /* z-index: 11111; */
+        opacity: 0;
+        transition:  1s all;
+    }
+    .sidenav ul{
+        position: absolute;
+        top: 50px;
+    }
+    .sidenav ul li {
+        list-style: none;
+        margin: 10px;
+        text-align: center;
+        font-size: 2.5rem;
+        padding: 20px 0;
+    }
+    .sidenav ul li a{
+        /* color: #000; */
+        mix-blend-mode: difference;
+        text-transform: uppercase;
+        /* text-align: center; */
+
+    }
+    .sidenav i{
+        font-size:40px;
+        position: absolute;
+        left: 30px;
+        top: 30px;
+    }
+    .navbtn{
+        /* position: absolute; */
+        /* right: 0; */
+        /* z-index: 999; */
+        display: flex;
+        align-items: center;
+    }
+    .navbtn i{
+        position: absolute;
+        /* top: 0; */
+    }
+    #head{
+        height: 100%;
+        object-fit:cover;
+        /* position: fixed; */
     }
   }

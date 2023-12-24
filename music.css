@@ -109,6 +109,15 @@ html,body{
     mix-blend-mode: difference;
     cursor: pointer;
 }
+#loop{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    mix-blend-mode: difference;
+}
 .container .img{
     display: flex;
     width: 60%;
@@ -119,7 +128,7 @@ html,body{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 20%;
+    border-radius: 20px;
     border: 2px solid #fff;
 }
 .title{
@@ -334,11 +343,16 @@ button{
     
     }
     .list,.container,.category{
-        width: 95vw;
-        height: 80vh;
+        width: 90vw;
+        height: 70vh;
         /* overflow: hidden; */
         position:absolute;
         /* backdrop-filter: blur(20px); */
+    }
+    .container .img{
+        width: 70%;
+        height: 45%;
+        /* border-radius: 5px; */
     }
     #backimg{
         /* width: 100%; */

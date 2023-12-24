@@ -25,7 +25,8 @@ gsap.from(".page2 h1,.page2 .c1 h4,.page2 .c2 h4",{
     scrollTrigger:{
         trigger:".page2",
         scroller:"body",
-        start:"top 60%"
+        // start:"top 60%",
+        // marker:true
     }
 })
 gsap.to(".page2 .musical",{
@@ -194,7 +195,28 @@ a.forEach(function(elem){
         // crsr.style.backgroundColor = "#95C11E";
       });
 })
+var bars=document.querySelector("#bars")
+var cross=document.querySelector("#cross")
+var sidenav=document.querySelector(".sidenav")
+var anchor=document.querySelectorAll(".sidenav ul li a")
+bars.addEventListener("click",function(){
+    sidenav.style.right=0
+    sidenav.style.opacity=1
+})
 
+cross.addEventListener("click",function(){
+    sidenav.style.right="-100%"
+    sidenav.style.opacity=0
+})
+
+anchor.forEach(function(elem){
+    elem.addEventListener("click",function(){
+        sidenav.style.right="-100%"
+        sidenav.style.opacity=0
+
+    })
+})
+// var navbtn=document.querySelector(".navbtn")
 // function moveCircle(e) {
 //   TweenLite.to(crsr, 0.3, {
 //     x: e.clientX,
