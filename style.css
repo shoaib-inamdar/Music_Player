@@ -472,11 +472,6 @@ footer i{
 }
 
 @media screen and (max-width: 768px) {
-    .main{
-        width: 100vw;
-        height: 100vh;
-        /* overflow: hidden; */
-    }
     .page1 .name {
         /* right: 0; */
       font-size: 2rem;
@@ -491,19 +486,20 @@ footer i{
     }
     .page2{
         /* left: 0; */
-        /* position: relative; */
+        position: relative;
     }
     .scrolldown a {
         font-size: 14px;
     }
     .page2 .content{
-        z-index: 1111;
+        margin: 5px 0;
+        /* z-index: 1111; */
         flex-direction:column;
         /* font-size: 20px; */
         width: 60%;
     }
     .content .c1,.content .c2{
-        margin: 0;
+        margin: 2px 0;
         padding: 0;
     }
     .page2 .content .c1 h4,.c2 h4{
@@ -511,12 +507,14 @@ footer i{
         width: 12rem;
         font-size: 2rem;
         height: 5rem;
+        margin: 2px 0;
     }
     .musical ,.song{
         display: none;
     }
     .page2 h1 {
       font-size: 3rem;
+      margin: 3px 0;
       /* text-align: center; */
     }
     footer .copyright{
@@ -526,7 +524,7 @@ footer i{
         font-size: 2rem;
     }
     nav{
-        position: relative;
+        position: fixed;
         /* width: 100vw; */
         top: 0;
         left: 0;
@@ -534,6 +532,7 @@ footer i{
         padding: 0px;
         justify-content: space-evenly;
         /* align-items: center; */
+        z-index: 9999;
     }
     nav ul{
         display: none;
@@ -544,20 +543,21 @@ footer i{
     .sidenav{
         display: flex;   /*? //flex/// */
         flex-direction: row;
-        position: absolute;
+        position: fixed;
         /* top: 80px; */
         justify-content: center;
         right: -100%;
         top: 0;
         background: rgba(225, 225, 225, 0.2);
-        backdrop-filter:blur(10px);
+        backdrop-filter:blur(20px);
         /* color: #000; */
         /* gap: 10px; */
         width: 100%;
         height: 100%;
-        /* z-index: 11111; */
+        z-index: 11111;
         opacity: 0;
         transition:  1s all;
+        /* overflow: hidden; */
     }
     .sidenav ul{
         position: absolute;

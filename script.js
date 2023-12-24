@@ -223,3 +223,4 @@ anchor.forEach(function(elem){
 //     y: e.clientY
 //   });
 // }
+// scrollTop=window.pageYOffset || document.documentElement.scrollTop;
