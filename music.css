@@ -71,7 +71,6 @@ html,body{
     z-index: -1;
     position: absolute;
     object-fit: cover;
-    top: 5px;
 }
 .container{
     width: 30%;
