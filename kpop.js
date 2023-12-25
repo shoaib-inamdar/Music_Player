@@ -263,3 +263,32 @@ function change() {
         category.style.opacity = "1";
     }
 }
+document.onkeydown = function (e) {
+    switch (e.which) {
+      case 37:
+        prevsong(); // left
+        break;
+      case 38://up arrow
+        music.play();
+        if (music.duration > 0 && !music.paused) {
+          playico.src = "pause.svg";
+        } else {
+          playico.src = "play.svg";
+        }
+        break;
+      case 40:
+        music.pause();//down arrow
+        if (music.duration > 0 && !music.paused) {
+          playico.src = "pause.svg";
+        } else {
+          playico.src = "play.svg";
+        }
+        break;
+      case 39:
+        nextsong(); // right
+        break;
+      default:
+        return; 
+    }
+    e.preventDefault();
+  };
