@@ -86,8 +86,6 @@ html,body{
     background: rgba(0, 0,0, 0.5);
     backdrop-filter:blur(.5rem);
     text-transform: uppercase;
-    /* opacity: 1; */
-    /* z-index: 2; */
 }
 .container .buttons, .buttons i{
     display: flex;
@@ -134,7 +132,6 @@ html,body{
 .title{
     font-size: 20px;
     font-weight: 900;
-    /* font-weight: ; */
 }
 .artist{
     font-size: 15px;
@@ -204,7 +201,7 @@ html,body{
 .category h1{
     border-radius: 10px;
     border: 2px solid #fff;
-        box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6,inset 0 0 1.3rem #0073e6;
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6,inset 0 0 1.3rem #0073e6;
     width: 90%;
 }
 .category h4:hover{
@@ -221,12 +218,7 @@ html,body{
     border-radius: 20px;
     font-family: 'Croissant One', cursive;
     text-align: center;
-    box-shadow: 0 0 .2rem #fff,
-              0 0 .2rem #fff,
-              0 0 2rem #bc13fe,
-              0 0 0.8rem #bc13fe,
-              0 0 2.8rem #bc13fe,
-              inset 0 0 1.3rem #bc13fe;
+    box-shadow: 0 0 .2rem #fff,0 0 .2rem #fff,0 0 2rem #bc13fe,0 0 0.8rem #bc13fe,0 0 2.8rem #bc13fe,inset 0 0 1.3rem #bc13fe;
 }
 .list ol{
     margin-left:10% ;
@@ -239,25 +231,6 @@ html,body{
     cursor: pointer;
     text-shadow:0 0 5px #fff, 0 0 10px #fff, 0 0 15px #bc13fe, 0 0 20px #bc13fe, 0 0 25px #bc13fe, 0 0 30px #bc13fe, 0 0 35px #bc13fe ;
 }
- /* @media (max-width:430px) {
- .main{
-    flex-direction: column;
-    flex-wrap: nowrap;
- }   
- .list,.container,.category{
-    width: 80%;
-    height: 100%;
- }
-  .container{
-    height: 80%;
- } 
-  .list{
-    margin-top: 15%;
-}
-.head{
-    height: 7%;
-}
-}  */
  .time{
     display: flex;    
     justify-content: space-between;
@@ -300,13 +273,9 @@ button{
 }
 .change{
     position: absolute;
-    /* margin: 10px 0px; */
     top: 10px;
     right: 0;
     color:#fff ;
-    /* padding: 0 10px; */
-    /* top: 50%; */
-    /* left: 50%; */
     border: 2px solid #fff;
     border-radius: 10px;
     background: rgba(0,0,0, 0.5);
@@ -314,15 +283,12 @@ button{
     width: 50px;
     height: 50px;
     display: none;
-
 }
 @media screen and (max-width: 768px) {
     html,body{
-        /* max-width: 100%; */
         overflow: hidden;
     }
     .change{
-        /* text-align: center; */
         font-size:x-large;
         display: flex;
         justify-content: center;
@@ -336,30 +302,23 @@ button{
     }
     .main{
         width: 100%;
-        /* overflow-wrap: wrap; */
         overflow: hidden;
         margin: 20px 0;
-        padding: 10px 10px;
-    
+        padding: 10px 10px;    
     }
     .list,.container,.category{
         width: 90vw;
         height: 70vh;
-        /* overflow: hidden; */
         position:absolute;
-        /* backdrop-filter: blur(20px); */
     }
     .container .img{
         width: 70%;
         height: 45%;
-        /* border-radius: 5px; */
     }
     #backimg{
-        /* width: 100%; */
         top: 0;
         object-fit:cover;
         height: 100vh;
-        /* object-position:-50px; */
     }
     .list,.category{
         opacity: 0;
@@ -374,8 +333,6 @@ button{
         opacity: 1;
     }
     .home{
-        /* position: relative; */
-        /* left: 0; */
         margin: 0;
     }
     .buttons i{
@@ -387,7 +344,6 @@ button{
         margin: 10px 10px;
         padding: 5px 1px;
         width: 170px;
-        /* height: 70px; */
         font-size: 12px;
         border-radius: 20px;
     }

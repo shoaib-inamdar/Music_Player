@@ -4,38 +4,20 @@
     box-sizing: border-box;
     color: #fff;
     font-family: 'Croissant One', 'Times New Roman', Times, serif;
-
 }
 html,body{
     height: 100%;
     width: 100%;
-    /* overflow: scroll; */
-    
-    /* background:rgb(0, 0, 0); */
 }
 body::-webkit-scrollbar{
     display: none;
 }
 html{
-    /* font-size: 10px; */
     scroll-behavior: smooth;
 }
-/* .progress{
-    width: 10px;
-    height: 10px;
-    background: red;
-    position: absolute;
-    right:0;
-    top: 0;
-    border-radius: 10px;
-} */
 .main{
-    /* overflow-x: hidden; */
     width: 100vw;
     height: 100vh;
-    /* position: relative; */
-    /* white-space: nowrap; */
-    /* overflow-x: hidden; */
 }
 .loader{
     width: 100%;
@@ -45,7 +27,6 @@ html{
     position: absolute;
     display: flex;
     flex-direction: column;
-    /* place-items: center; */
     align-items: center;
     justify-content: center;
     top: 0;
@@ -53,10 +34,6 @@ html{
 .loader img{
     width: 25rem;
     height: 25rem;
-    /* clip-path: circle(50% at 50% 50%); */
-    /* clip-path: polygon(50% 0%, 0% 100%, 100% 100%); */
-    /* filter: drop-shadow( 5px 5px 5px #000,5px 5px 10px #fff,5px 5px 15px yellow,5px 5px 20px yellow); */
-    /* box-shadow: 0 0 5px #fff,0 0 10px #fff,0 0 15px #fff,0 0 20px #fff; */
 }
 .loader h1{
     font-size: 3rem;
@@ -64,12 +41,6 @@ html{
 body{
     width: 100vw;
     height: 100vh;
-    /* background: url(music.gif), no-repeat, center ,cover; */
-    /* background-image: url(music.gif); */
-    /* background-attachment: fixed; */
-    /* background-position: center; */
-    /* background-size:cover; */
-    /* background-repeat: no-repeat; */
 }
 .scrolldown{
     width: auto;
@@ -80,7 +51,6 @@ body{
     text-transform: uppercase;
     transform: translateX(-50%);
     left: 50%;
-    /* z-index: 1; */
     color:#fff ;
 }
 .scrolldown:hover{
@@ -91,40 +61,24 @@ body{
 .page1{
     height: 100%;
     width: 100%;
-    /* background-color:rgb(0, 0, 0); */
-    /* z-index: 11; */
-    /* overflow-x: hidden; */
-    /* position: absolute; */
-    /* border-radius: -10%; */
-    /* background-clip:; */
 }
 #head{
     width: 100%;
-    /* height: 100%; */
     z-index: -1;
     position: fixed;
     top: 0;
     object-fit:contain;
 }
 .page2{
-    /* border-radius: 10%; */
     height: 100%;
     width: 100%;
     background: transparent;
-    /* backdrop-filter:blur(1.0rem); */
-    /* border: .2rem solid; */
     display: grid;
     place-items: center;
     position: relative;
     text-transform: uppercase;
     font-size: 2.4rem;
 }
-/* .page4{
-    height: 100%;
-    width: 100%;
-    background:rgb(0, 0, 0);
-    border: .2rem solid;
-} */
 nav{
     width: 100%;
     height: 9%;
@@ -133,25 +87,19 @@ nav{
     align-items: center;
     padding: 0 10px;
     margin: 20px 0;
-    /* border-bottom: .2rem solid ; */
-    /* box-shadow:0 0 1.0rem ; */
     position:fixed;
     z-index: 999;
     top: 0;
     text-transform: uppercase;
     backdrop-filter: blur(1.5rem);
-    /* color: #fff; */
-    /* mix-blend-mode: difference; */
 }
 nav ul{
     display:flex;
     list-style: none;
 }
 nav ul li{
-    /* flex-direction: column; */
     margin: 0px 10px;
     display: flex;
-    /* font-weight: 100px; */
     font-size: 1rem;
 }
 nav ul li a{
@@ -164,27 +112,21 @@ a{
 a::before{
     content: "";
     background:rgba(225,225, 225,1);
-    /* border: 2px solid #fff; */
-    /* box-shadow: 0 0 5px #fff,0 0 10px #fff,0 0 15px #fff,0 0 20px #fff; */
     box-shadow: 0 0 5px #fff,0 0 10px #fff,0 0 15px #da1ea3,0 0 20px #da1ea3,0 0 25px #da1ea3,0 0 30px #da1ea3;
     position: absolute;
-        animation: hue 2s infinite;
-
+    animation: hue 2s infinite;
     top: -5px;
     left: 0;
     height: 2px;
     width: 100%;
     transform: scaleX(0);
     transition: .3s ease-in-out ;
-
 }
 a::after{
     content: "";
     background:rgba(225,225, 225,1);
     box-shadow: 0 0 5px #fff,0 0 10px #fff,0 0 15px #da1ea3,0 0 20px #da1ea3,0 0 25px #da1ea3,0 0 30px #da1ea3;
-    /* border: 2px solid #fff; */
-        animation: hue 2s infinite;
-
+    animation: hue 2s infinite;
     position: absolute;
     bottom: -5px;
     left: 0;
@@ -192,30 +134,11 @@ a::after{
     width: 100%;
     transform: scaleX(0);
     transition: .3s ease-in-out ;
-
 }
 a:hover::before,
 a:hover::after{
     transform: scaleX(1);
-    /* text-shadow: 0 0 5px #fff,0 0 10px #fff,0 0 15px #fff,0 0 20px #fff; */
-    /* height: 25px; */
-    /* width: 105%; */
-    /* padding: 0 6px; */
-    /* transform: translate(-10px,0%); */
-    /* text-a/lign: center; */
-    /* backg?round-color: #fff; */
-    /* text-emphasis-color: #000; */
 }
-/* a:hover{
-    color: #000;
-
-} */
-/* nav ul{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    float: right;
-} */
 .page1 .content{
     position: absolute;
     top: 35%;
@@ -223,11 +146,9 @@ a:hover::after{
     width: 30%;
     height: 40%;
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     background: rgba(225, 225,225, 0.1);
     backdrop-filter:blur(1.0rem);
-    /* border: 2rem solid; */
     text-transform: uppercase;
     border-radius: 20%;
     font-size: 1.5rem;
@@ -242,38 +163,13 @@ a:hover::after{
 }
 .page1 .name{
     font-size: 4.0rem;
-    /* color: #fff; */
-    /* animation: hue 2s infinite; */
 }
-/* nav ul li::before{
-    content: "";
-    position:absolute;
-    border-bottom: 2rem solid;
-    bottom: 0;
-    width: 100%;
-    padding: 0 10rem;
-    /* margin: 0 10rem; */
-    /* gap:100rem; */
-/* }  */
-/* nav ul li a:hover{
-    box-shadow: 0 .5rem 10px white;
-    transition: .5s;
-    color:#bb0000;
-} */
 .page1 .content h1{
     margin-left: 10%;
-    /* mix-blend-mode: difference; */
-    /* background-image: url(music.png);
-    background-size: cover;
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent; */
 }
 .page1 .logo{
     font-size: 4.0rem;
     margin-left: 2.0rem;
-    /* width: 10%; */
-    /* height: 10%; */
 }
 .page1 .logo:hover{
     text-shadow:0 0 5px #fff,0 0 10px #fff,0 0 15px #1fe9f1,0 0 20px #1fe9f1 , 0 0 25px #1fe9f1,0 0 30px #1fe9f1,0 0 35px #1fe9f1;
@@ -282,11 +178,8 @@ a:hover::after{
 }
 .page1 .para{
     width: 100%;
-    /* position: absolute; */
     display:inline-block;
     overflow: hidden;
-    /* bottom: 0; */
-    
     font-size: 100px;
 }
 button{
@@ -297,97 +190,64 @@ button{
     width: 50%;
     height: auto;
     display: flex;
-    /* place-items:center ; */
     justify-content: center;
     align-items: center;
     z-index: 111;
     color: #fff;
     text-transform: uppercase;
-    /* border: 2px solid red; */
     background: rgba(225, 225,225, 0.3);
-    /* filter: blur(10px); */
-    /* z-index: 1; */
     border-radius: 10%;
     font-size: 40px;
 }
 .page2 .content .c1 h4,.c2 h4{
     display: flex;
-    /* align-items: start; */
-    /* font-size: 50px; */
-    /* padding: 5px; */
-    /* float: left; */
-    /* position: absolute; */
-    /* text-align: center; */
     align-items: center;
     justify-content: center;
     width: 15rem;
     height: 5rem;
     margin: 6px ;
     text-align: center;
-    /* border: 2px solid yellow; */
     background: rgba(0, 0,0, .7);
     backdrop-filter:blur(1.5rem);
-    /* border: 1px solid white; */
     color: #fff;
     border-radius: 50px;
 }
 .page2 .content .c1,.c2 {
     padding: 10px 0px;
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* text-align: center; */
-    /* float: left; */
 }
 .page1 .para1{
     display: flex;
     position: absolute;
     width: 100%;
     bottom: 10%;
-    /* left: 0; */
     overflow-x: hidden;
 }
 .page1 .para1 h5{
     background: #fff;
     color: #000;
-    /* height: 5%; */
     white-space: nowrap;
     width: 100%;
     font-size:500%;
-    /* overflow-x: hidden; */
-
-    /* background-clip:border-box; */
     text-transform: uppercase;
-    /* mix-blend-mode: difference; */
-
 }
 .page1 .para2{
     display: flex;
     position: absolute;
     width: 40%;
     bottom: 20%;
-    /* overflow-x: hidden; */
-
     left: -30%;
-    /* transform:translateX(-100px); */
-    /* transform: rotate(90deg);1 */
 }
 .page1 .para2 h5{
     background: #000;
-    /* overflow-x: hidden; */
-    
     color: #fff;
-    /* height: 5%; */
     white-space: nowrap;
     width: 100%;
     font-size:500%;
-    /* background-clip:border-box; */
     text-transform: uppercase;
 }
 .page2 .musical{
     width: 15%;
     height: 30%;
-    /* filter: drop-shadow(0 0 5px #fff,0 0 10px #fff,0 0 15px #da1ea3,0 0 20px #da1ea3,0 0 25px #da1ea3,0 0 30px #da1ea3); */
     position: absolute;
     bottom: 0;
     left: 0;
@@ -397,8 +257,7 @@ button{
     height: 40%;
     position: absolute;
     bottom: 0;
-    right:0;
-    
+    right:0;    
 }
 .page2 h1{
     text-align: center;
@@ -409,7 +268,6 @@ button{
     backdrop-filter:blur(1.5rem);
     font-size: 3.5rem;
 }
-
 footer{
     width: 100%;
     height: 40%;
@@ -419,26 +277,17 @@ footer{
     justify-content: center;
     text-align: center;
     align-items: center;
-    /* border-radius: 50px; */
     border-top-right-radius: 100px;
     border-top-left-radius: 100px;
     background: rgba(225, 225, 225, 0.2);
     backdrop-filter:blur(1.5rem);
-    /* font-family:'Times New Roman', Times, serif; */
     z-index: 111;
 }
 footer .icon{
-    /* align-items: center; */
-    /* justify-content: center; */
-    /* display: flex; */
     margin: 0 20px;
 }
 footer i{
     padding: 0 10px;
-    /* background: transparent; */
-    /* animation: hue 2s infinite; */
-    /* color: transparent; */
-    /* color: rgba(25, 25,22, 1); */
 }
 .copyright{
     font-size: 2rem;
@@ -446,14 +295,14 @@ footer i{
 .cursor{
     width: 20px;
     height: 20px;
-    /* border: 2px solid red; */
     border:2px solid #95C11E;
     z-index: 9999;
-    /* transform: translate(-50%,-50%); */
-    /* top: 50%; */
-    /* left: 50%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:.4rem;
     border-radius: 50%;
-    box-shadow:0 0 5px #1fe9f1 ,inset 0 0 5px #1fe9f1;
+    box-shadow:0 0 5px #1fe9f1 ;
     position: fixed;
     transition: all linear .1s;
     pointer-events: none;
@@ -470,10 +319,8 @@ footer i{
         filter: hue-rotate(360deg);
     }
 }
-
 @media screen and (max-width: 768px) {
     .page1 .name {
-        /* right: 0; */
       font-size: 2rem;
     }
     .page1 .logo{
@@ -485,7 +332,6 @@ footer i{
         padding: 0 ;
     }
     .page2{
-        /* left: 0; */
         position: relative;
     }
     .scrolldown a {
@@ -493,9 +339,7 @@ footer i{
     }
     .page2 .content{
         margin: 5px 0;
-        /* z-index: 1111; */
         flex-direction:column;
-        /* font-size: 20px; */
         width: 60%;
     }
     .content .c1,.content .c2{
@@ -503,7 +347,6 @@ footer i{
         padding: 0;
     }
     .page2 .content .c1 h4,.c2 h4{
-        /* padding: 0; */
         width: 12rem;
         font-size: 2rem;
         height: 5rem;
@@ -515,7 +358,6 @@ footer i{
     .page2 h1 {
       font-size: 3rem;
       margin: 3px 0;
-      /* text-align: center; */
     }
     footer .copyright{
         font-size: 1rem;
@@ -525,39 +367,31 @@ footer i{
     }
     nav{
         position: fixed;
-        /* width: 100vw; */
         top: 0;
         left: 0;
         margin: 0px;
         padding: 0px;
         justify-content: space-evenly;
-        /* align-items: center; */
         z-index: 9999;
     }
     nav ul{
         display: none;
-        /* position: absolute; */
-        /* top: 0; */
         z-index: -1111;
     }
     .sidenav{
         display: flex;   /*? //flex/// */
         flex-direction: row;
         position: fixed;
-        /* top: 80px; */
         justify-content: center;
         right: -100%;
         top: 0;
         background: rgba(225, 225, 225, 0.2);
         backdrop-filter:blur(20px);
-        /* color: #000; */
-        /* gap: 10px; */
         width: 100%;
         height: 100%;
         z-index: 11111;
         opacity: 0;
         transition:  1s all;
-        /* overflow: hidden; */
     }
     .sidenav ul{
         position: absolute;
@@ -571,11 +405,8 @@ footer i{
         padding: 20px 0;
     }
     .sidenav ul li a{
-        /* color: #000; */
         mix-blend-mode: difference;
         text-transform: uppercase;
-        /* text-align: center; */
-
     }
     .sidenav i{
         font-size:40px;
@@ -584,19 +415,14 @@ footer i{
         top: 30px;
     }
     .navbtn{
-        /* position: absolute; */
-        /* right: 0; */
-        /* z-index: 999; */
         display: flex;
         align-items: center;
     }
     .navbtn i{
         position: absolute;
-        /* top: 0; */
     }
     #head{
         height: 100%;
         object-fit:cover;
-        /* position: fixed; */
     }
   }

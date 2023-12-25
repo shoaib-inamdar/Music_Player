@@ -104,6 +104,7 @@ const loadSong=(songs)=>{
     music.src="3d-audiosongs/"+songs.name+".m4a";
     ima.src="3d-audioimages/"+songs.name+".jpg";
     backimg.src="3d-audioimages/"+songs.name+".jpg";
+    document.title=songs.name;
 }
 songindex=0;
 const nextsong=()=>{

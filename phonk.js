@@ -137,6 +137,7 @@ const loadSong=(songs)=>{
     music.src="phonksongs/"+songs.name+".m4a";
     ima.src="phonkimages/"+songs.name+".jpg";
     backimg.src="phonkimages/"+songs.name+".jpg";
+    document.title=songs.name;
 }
 songindex=0;
 const nextsong=()=>{

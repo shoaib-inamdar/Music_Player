@@ -100,6 +100,7 @@ const loadSong=(songs)=>{
     music.src="animesongs/"+songs.name+".m4a";
     ima.src="animeimages/"+songs.name+".jpg";
     backimg.src="animeimages/"+songs.name+".jpg";
+    document.title=songs.name;
 }
 songindex=0;
 const nextsong=()=>{

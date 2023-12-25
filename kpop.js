@@ -124,7 +124,7 @@ const loadSong=(songs)=>{
     music.src="k-popsongs/"+songs.name+".m4a";
     ima.src="k-popimages/"+songs.name+".jpg";
     backimg.src="k-popimages/"+songs.name+".jpg";
-    // document.title="now playing "+songs.name;
+    document.title=songs.name;
 }
 songindex=0;
 const nextsong=()=>{

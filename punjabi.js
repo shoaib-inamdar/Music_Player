@@ -130,6 +130,7 @@ const loadSong=(songs)=>{
     music.src="punjabisongs/"+songs.name+".m4a";
     ima.src="punjabiimages/"+songs.name+".jpg";
     backimg.src="punjabiimages/"+songs.name+".jpg";
+    document.title=songs.name;
 }
 songindex=0;
 const nextsong=()=>{
@@ -274,8 +275,3 @@ function change() {
         category.style.opacity = "1";
     }
 }
-
-
-// zindex.addEventListener("click",function(){
-    
-// })

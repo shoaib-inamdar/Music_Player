@@ -95,6 +95,7 @@ const loadSong=(songs)=>{
     music.src="telugusongs/"+songs.name+".m4a";
     ima.src="teluguimages/"+songs.name+".jpg";
     backimg.src="teluguimages/"+songs.name+".jpg";
+    document.title=songs.name;
 }
 songindex=0;
 const nextsong=()=>{

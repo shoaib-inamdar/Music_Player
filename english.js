@@ -125,6 +125,7 @@ const loadSong=(songs)=>{
     music.src="englishsongs/"+songs.name+".m4a";
     ima.src="englishimages/"+songs.name+".jpg";
     backimg.src="englishimages/"+songs.name+".jpg";
+    document.title=songs.name;
 }
 songindex=0;
 const nextsong=()=>{

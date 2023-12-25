@@ -120,6 +120,7 @@ const loadSong=(songs)=>{
     music.src="hindisongs/"+songs.name+".m4a";
     ima.src="hindiimages/"+songs.name+".jpg";
     backimg.src="hindiimages/"+songs.name+".jpg";
+    document.title=songs.name;
 }
 songindex=0;
 const nextsong=()=>{
