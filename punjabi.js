@@ -269,31 +269,61 @@ function change() {
   }
 }
 document.onkeydown = function (e) {
-    switch (e.which) {
-      case 37:
-        prevsong(); // left
-        break;
-      case 38://up arrow
-        music.play();
-        if (music.duration > 0 && !music.paused) {
-          playico.src = "pause.svg";
-        } else {
-          playico.src = "play.svg";
-        }
-        break;
-      case 40:
-        music.pause();//down arrow
-        if (music.duration > 0 && !music.paused) {
-          playico.src = "pause.svg";
-        } else {
-          playico.src = "play.svg";
-        }
-        break;
-      case 39:
-        nextsong(); // right
-        break;
-      default:
-        return; 
-    }
-    e.preventDefault();
-  };
+  switch (e.which) {
+    case 37:
+      prevsong(); // left
+      break;
+    case 38: //up arrow
+      music.play();
+      if (music.duration > 0 && !music.paused) {
+        playico.src = "pause.svg";
+      } else {
+        playico.src = "play.svg";
+      }
+      break;
+    case 40:
+      music.pause(); //down arrow
+      if (music.duration > 0 && !music.paused) {
+        playico.src = "pause.svg";
+      } else {
+        playico.src = "play.svg";
+      }
+      break;
+    case 39:
+      nextsong(); // right
+      break;
+    case 49:
+      song0();
+      break;
+    case 50:
+      song1();
+      break;
+    case 51:
+      song2();
+      break;
+    case 52:
+      song3();
+      break;
+    case 53:
+      song4();
+      break;
+    case 54:
+      song5();
+      break;
+    case 55:
+      song6();
+      break;
+    case 56:
+      song7();
+      break;
+    case 57:
+      song8();
+      break;
+    case 48:
+      song9();
+      break;
+    default:
+      return;
+  }
+  e.preventDefault();
+};

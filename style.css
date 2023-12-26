@@ -405,7 +405,7 @@ footer i{
         padding: 20px 0;
     }
     .sidenav ul li a{
-        mix-blend-mode: difference;
+        color: #fff;
         text-transform: uppercase;
     }
     .sidenav i{
