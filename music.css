@@ -11,6 +11,9 @@ html,body{
     justify-content: center;
     overflow: hidden;
 }
+body{
+    background:#000;
+}
 .head{
     text-align: center;
     height:  10%;
