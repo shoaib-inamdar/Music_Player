@@ -2,6 +2,7 @@ gsap.registerPlugin(ScrollTrigger);
 const tl=gsap.timeline();
 const lenis = new Lenis()
 
+
 lenis.on('scroll', (e) => {
   console.log(e)
 })
