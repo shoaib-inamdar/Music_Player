@@ -1,5 +1,17 @@
 gsap.registerPlugin(ScrollTrigger);
 const tl=gsap.timeline();
+const lenis = new Lenis()
+
+lenis.on('scroll', (e) => {
+  console.log(e)
+})
+lenis.on('scroll', ScrollTrigger.update)
+
+gsap.ticker.add((time)=>{
+  lenis.raf(time * 500)
+})
+
+gsap.ticker.lagSmoothing(0)
 tl.to(".loader",{
     y:-1000,
     duration:2,
@@ -53,8 +65,12 @@ gsap.to(".scrolldown",{
 })
 var crsr = document.querySelector(".cursor");
 window.addEventListener("mousemove", function (dets) {
-    crsr.style.left = dets.clientX + "px";
-    crsr.style.top = dets.clientY + "px";
+    gsap.to(crsr,{
+        top:dets.clientY+"px",
+        left:dets.clientX+"px"
+    })
+    // crsr.style.left = dets.clientX + "px";
+    // crsr.style.top = dets.clientY + "px";
   });
 var category=document.querySelector(".page2 h1");
 var nav=document.querySelector("nav")

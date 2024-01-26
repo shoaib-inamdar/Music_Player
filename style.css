@@ -12,9 +12,9 @@ html,body{
 body::-webkit-scrollbar{
     display: none;
 }
-html{
+/* html{
     scroll-behavior: smooth;
-}
+} */
 .main{
     width: 100vw;
     height: 100vh;
