@@ -42,6 +42,21 @@ const songs = [
     title: "Heat-Waves",
     artist: "Glass Animals",
   },
+  {
+    name: "aaj-se-teri",
+    title: "aaj-se-teri",
+    artist: "Arijit Singh",
+  },
+  {
+    name: "Malang",
+    title: "Malang",
+    artist: "Siddharth Mahadevan, Shilpa Rao",
+  },
+  {
+    name: "Sooraj-Dooba-Hain",
+    title: "Sooraj-Dooba-Hain",
+    artist: "ARIJIT SINGH, ADITI SINGH SHARMA",
+  },
 ];
 var flag = true;
 btn.addEventListener("click", () => {
